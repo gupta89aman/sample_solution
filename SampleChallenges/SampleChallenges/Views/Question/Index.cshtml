@@ -1,0 +1,62 @@
+﻿@using System.Collections.Generic
+@model List<SampleChallenges.Models.QuestionModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h4>QuestionModel</h4>
+        <hr />
+        <table class="table-bordered">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].QuesionTopicName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].QuestionCategory[0].QuestionCategoryName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].QuestionContent[0].QuestionContentName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].QuestionContent[0].QuestionContentType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model[0].CreatedOrModified)
+                </th>
+            </tr>
+            @foreach (var question in @Model)
+            {
+               <tr>
+                    <td>
+                        @Html.DisplayFor(model => question.QuesionTopicName)
+                    </td>                  
+                    <td>
+                        @Html.DisplayFor(model => question.QuestionContent[0].QuestionContentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => question.QuestionContent[0].QuestionContentName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => question.CreatedOrModified)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index") |
+        @Html.ActionLink("Add New Question", "Insert")
+    </p>
+</body>
+</html>

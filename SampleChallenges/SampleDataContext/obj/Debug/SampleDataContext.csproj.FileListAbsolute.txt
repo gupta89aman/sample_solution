@@ -1,0 +1,7 @@
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\bin\Debug\SampleDataContext.dll.config
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\bin\Debug\SampleDataContext.dll
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\bin\Debug\SampleDataContext.pdb
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\bin\Debug\EntityFramework.dll
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\bin\Debug\EntityFramework.xml
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\obj\Debug\SampleDataContext.dll
+E:\MySolutions\SampleChallenges\SampleChallenges\SampleDataContext\obj\Debug\SampleDataContext.pdb
